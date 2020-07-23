@@ -1,10 +1,10 @@
-# Facial_Attributes_Classification
+# Facial-Attributes-Classification
 Facial attributes classification based on MobileNet, a light weight deep neural network using CelebA cropped dataset.
 
 This project is for ENGN8536 in ANU.
 
 ### Requirement
-
+See [requirement.txt](./requirement.txt) for further details.
 
 ### Dataset
 [Large-scale CelebFaces Attributes (CelebA) Dataset](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html)<br>
