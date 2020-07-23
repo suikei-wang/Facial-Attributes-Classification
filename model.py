@@ -1,3 +1,7 @@
+import torch
+from torch import nn
+
+
 # mish activation function
 class mish(nn.Module):
     def __init__(self):
@@ -14,7 +18,6 @@ def conv_bn(inp, oup, stride):
         mish()
     )
 
-
 def conv_dw(inp, oup, stride):
     return nn.Sequential(
         nn.Conv2d(inp, inp, 3, stride, 1, groups=inp, bias=False),
@@ -25,7 +28,6 @@ def conv_dw(inp, oup, stride):
         nn.BatchNorm2d(oup),
         mish()
     )
-
 
 class MobileNet(nn.Module):
     def __init__(self):

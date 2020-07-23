@@ -3,6 +3,9 @@ Facial attributes classification based on MobileNet, a light weight deep neural 
 
 This project is for ENGN8536 in ANU.
 
+### Requirement
+
+
 ### Dataset
 [Large-scale CelebFaces Attributes (CelebA) Dataset](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html)<br>
 **CelebA** is a large-scale facial images dataset containing 202,599 images with 40 different facial attributes labels. 
@@ -18,3 +21,4 @@ Details of our experiment results is in our project report [Facial Attribute Cla
 Author:<br>
 Ziqing Wang: <u6762874@anu.edu.au><br>
 Suikei Wong: <u6624985@anu.edu.au>
+
