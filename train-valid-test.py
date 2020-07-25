@@ -1,9 +1,13 @@
-def train(model, epochs, train_all_losses, train_all_acc):
+import torch
+
+
+def train(model, epochs, train_all_losses, train_all_acc, trainloader):
     model.train()
     # initial the running loss
     running_loss = 0.0
     # pick each data from trainloader i: batch index/ data: inputs and labels
     correct = 0
+    optimizer = torch.optim.Adam(mobilenet.parameters(), lr=learning_rate, betas=(0.9, 0.999))
     for i, data in enumerate(trainloader):
         # get the inputs; data is a list of [inputs, labels]
         inputs, labels = data
@@ -38,7 +42,7 @@ def train(model, epochs, train_all_losses, train_all_acc):
     print('\nTraining set: Epoch: %d, Accuracy: %.2f %%' % (epochs + 1, 100. * acc))
 
 
-def validation(model, val_all_losses, val_all_acc, best_acc):
+def validation(model, val_all_losses, val_all_acc, best_acc, validloader):
     model.eval()
     validation_loss = 0.0
     correct = 0
@@ -66,7 +70,7 @@ def validation(model, val_all_losses, val_all_acc, best_acc):
     return acc
 
 
-def test(model, attr_acc, attr_name=attributes):
+def test(model, attr_acc, attr_name=attributes, testloader):
     test_loss = 0
     correct = 0
     pred = []
