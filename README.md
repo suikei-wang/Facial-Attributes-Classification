@@ -16,7 +16,7 @@ MobileNets model is on the basis of depthwise separable convolutions, which is a
 
 ### Experiment
 Main enviornment: Pytorch v1.3.1 on Google Colab<br>
-Details of our experiment results is in our project report [Facial Attribute Classification: A Light Weight Deep Neural Network](./Facial_attributes_classification.pdf)
+Details of our experiment results is in our project report [Facial Attribute Classification: A Light Weight Deep Neural Network](Report/Facial_attributes_classification.pdf)
 <br>
 Author:<br>
 Ziqing Wang: <u6762874@anu.edu.au><br>
